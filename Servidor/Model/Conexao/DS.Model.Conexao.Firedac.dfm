@@ -4,7 +4,7 @@ object DMConexaoFiredac: TDMConexaoFiredac
   Width = 345
   object FDConnection: TFDConnection
     Params.Strings = (
-      'Database=pessoa'
+      'Database=wk'
       'User_Name=postgres'
       'Password=postgres10'
       'Server=localhost'

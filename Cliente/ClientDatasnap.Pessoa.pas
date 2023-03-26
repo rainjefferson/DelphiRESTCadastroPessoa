@@ -43,6 +43,9 @@ type
     btnEnviarLote: TButton;
     btnAtualizarEnderecos: TButton;
     pnlWait: TPanel;
+    Label12: TLabel;
+    Label13: TLabel;
+    Label14: TLabel;
     procedure btnGetPessoaClick(Sender: TObject);
     procedure btnPutClick(Sender: TObject);
     procedure btnPostClick(Sender: TObject);

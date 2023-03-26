@@ -10,4 +10,9 @@ object ModelEntidadePessoa: TModelEntidadePessoa
     Left = 100
     Top = 70
   end
+  object FDQuery2: TFDQuery
+    Connection = DMConexaoFiredac.FDConnection
+    Left = 184
+    Top = 72
+  end
 end

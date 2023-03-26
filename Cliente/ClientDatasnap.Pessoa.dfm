@@ -23,6 +23,8 @@ object Form2: TForm2
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Exerc'#237'cio 3'
+      ExplicitLeft = 0
+      ExplicitTop = 28
       object Label9: TLabel
         Left = 8
         Top = 8
@@ -47,6 +49,45 @@ object Form2: TForm2
         Font.Height = -13
         Font.Name = 'Tahoma'
         Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label12: TLabel
+        Left = 11
+        Top = 525
+        Width = 29
+        Height = 13
+        Caption = 'Insert'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 16744448
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label13: TLabel
+        Left = 92
+        Top = 525
+        Width = 35
+        Height = 13
+        Caption = 'Update'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clTeal
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+      end
+      object Label14: TLabel
+        Left = 173
+        Top = 525
+        Width = 31
+        Height = 13
+        Caption = 'Excluir'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clMaroon
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
         ParentFont = False
       end
       object dbgrigPessoa: TDBGrid
@@ -300,8 +341,8 @@ object Form2: TForm2
         end
       end
       object btnPut: TButton
-        Left = 8
-        Top = 504
+        Left = 11
+        Top = 500
         Width = 75
         Height = 25
         Caption = 'Put '
@@ -309,8 +350,8 @@ object Form2: TForm2
         OnClick = btnPutClick
       end
       object btnPost: TButton
-        Left = 89
-        Top = 504
+        Left = 92
+        Top = 500
         Width = 75
         Height = 25
         Caption = 'Post'
@@ -318,8 +359,8 @@ object Form2: TForm2
         OnClick = btnPostClick
       end
       object btnDelete: TButton
-        Left = 170
-        Top = 504
+        Left = 173
+        Top = 500
         Width = 75
         Height = 25
         Caption = 'Delete'

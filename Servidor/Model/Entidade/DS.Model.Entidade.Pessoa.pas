@@ -12,8 +12,10 @@ uses
 type
   TModelEntidadePessoa = class(TDataModule)
     FDQuery1: TFDQuery;
+    FDQuery2: TFDQuery;
   private
     { Private declarations }
+    function ObterProximoCodigo(const Tabela, Campo: String): Variant;
   public
     { Public declarations }
     function Get(const Key : String = ''): TJSONArray;
@@ -79,6 +81,11 @@ begin
     FDQuery1.Open;
     FDQuery1.RecordFromJSONObject(aJsonObjetc as TJSonObject);
 
+    if not (FDQuery1.State in dsEditModes) then
+      FDQuery1.Edit;
+
+    FDQuery1.FieldByName('idpessoa').Value := ObterProximoCodigo('pessoa', 'idpessoa');
+
     DMConexaoFiredac.FDTransaction.StartTransaction;
     try
       FDQuery1.ApplyUpdates(-1);
@@ -128,6 +135,12 @@ begin
   FDQuery1.Open;
 
   FDQuery1.FromJSONObject(JObject);
+
+  if not (FDQuery1.State in dsEditModes) then
+    FDQuery1.Edit;
+
+  FDQuery1.FieldByName('idpessoa').Value := ObterProximoCodigo('pessoa', 'idpessoa');
+
   DMConexaoFiredac.FDTransaction.StartTransaction;
   try
     FDQuery1.ApplyUpdates(-1);
@@ -139,6 +152,18 @@ begin
       raise Exception.Create('Erro ao gravar inclusão de pessoa no banco de dados Erro: ' + E.Message);
     end;
   end;
+end;
+
+function TModelEntidadePessoa.ObterProximoCodigo(const Tabela, Campo: String): Variant;
+begin
+  FDQuery2.Close;
+  FDQuery2.SQL.Clear;
+  FDQuery2.SQL.Add('select max(' + Campo + ') as prox from ' + Tabela);
+  FDQuery2.Open;
+  if FDQuery2.FieldByName('prox').IsNull then
+    Result := 1
+  else
+    Result := FDQuery2.FieldByName('prox').Value + 1;
 end;
 
 end.

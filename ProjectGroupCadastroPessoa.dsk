@@ -1,54 +1,54 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\datasnap\Datasnap.DSService.pas',0,1,772,68,785,0,0,,
-File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Indy10\Protocols\IdCustomHTTPServer.pas',0,1,1426,1,1445,0,0,,
-File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\SOURCE\VCL\Vcl.Controls.pas',0,1,7424,1,7443,0,0,,
-File_3=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\SOURCE\VCL\Vcl.StdCtrls.pas',0,1,5423,1,5442,0,0,{{1656,4},{1674,15},{'TScrollWindow'}},
-File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\firedac\FireDAC.Stan.Error.pas',0,1,170,32,180,0,0,,
-File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Internet\Web.HTTPApp.pas',0,1,2181,75,2196,0,0,,
-File_6=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\dbx\Data.DBXCommon.pas',0,1,8953,1,8972,0,0,,
-File_7=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Indy10\Core\IdContext.pas',0,1,166,1,185,0,0,,
-File_8=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Indy10\Core\IdThread.pas',0,1,409,1,428,0,0,,
-File_9=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\rtl\common\System.Rtti.pas',0,1,9212,1,9222,0,0,,
-File_10=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\datasnap\Datasnap.DSCommonServer.pas',0,1,2522,1,2541,0,0,,
-File_11=TSourceModule,'C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\WebModuleUnit1.pas',0,1,83,52,85,0,0,,
-File_12=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\rest\REST.HttpClient.pas',0,1,513,1,532,0,0,,
-File_13=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\datasnap\Datasnap.DSHTTPWebBroker.pas',0,1,388,1,407,0,0,,
+File_0=TSourceModule,'C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\DataSetConverter4D.Helper.pas',0,1,57,35,72,0,0,,
+File_1=TSourceModule,'C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\DataSetConverter4D.pas',0,1,8,15,35,0,0,,
+File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\datasnap\Datasnap.DSService.pas',0,1,772,68,785,0,0,,
+File_3=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Indy10\Protocols\IdCustomHTTPServer.pas',0,1,1426,1,1445,0,0,,
+File_4=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\SOURCE\VCL\Vcl.Controls.pas',0,1,7424,1,7443,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\SOURCE\VCL\Vcl.StdCtrls.pas',0,1,5423,1,5442,0,0,{{1656,4}
+File_6=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\firedac\FireDAC.Stan.Error.pas',0,1,170,32,180,0,0,,
+File_7=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Internet\Web.HTTPApp.pas',0,1,2181,75,2196,0,0,,
+File_8=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\dbx\Data.DBXCommon.pas',0,1,8953,1,8972,0,0,,
+File_9=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Indy10\Core\IdContext.pas',0,1,166,1,185,0,0,,
+File_10=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\Indy10\Core\IdThread.pas',0,1,409,1,428,0,0,,
+File_11=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\rtl\common\System.Rtti.pas',0,1,9212,1,9222,0,0,,
+File_12=TSourceModule,'c:\program files (x86)\embarcadero\studio\19.0\source\data\datasnap\Datasnap.DSCommonServer.pas',0,1,2522,1,2541,0,0,,
+File_13=TSourceModule,'C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\WebModuleUnit1.pas',0,1,83,52,85,0,0,,
 
 [Modules]
-Module0=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\DM.ClientDatasnap.pas
-Module1=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\ClientDatasnap.Pessoa.pas
-Module2=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas
-Module3=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas
-Module4=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
-Module5=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Pessoa.pas
-Module6=default.htm
+Module0=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
+Module1=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas
+Module2=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas
+Module3=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Cliente\ClientDatasnap.Pessoa.pas
+Module4=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Conexao\DS.Model.Conexao.Firedac.pas
+Module5=default.htm
+Module6=documentation.htm
 Count=7
 EditWindowCount=1
 
-[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\DM.ClientDatasnap.pas]
+[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas]
 ModuleType=TSourceModule
 
-[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\ClientDatasnap.Pessoa.pas]
+[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas]
 ModuleType=TSourceModule
 
-[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas]
+[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas]
 ModuleType=TSourceModule
 
-[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas]
+[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Cliente\ClientDatasnap.Pessoa.pas]
 ModuleType=TSourceModule
 
-[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas]
-ModuleType=TSourceModule
-
-[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Pessoa.pas]
+[C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Conexao\DS.Model.Conexao.Firedac.pas]
 ModuleType=TSourceModule
 
 [default.htm]
 ModuleType=TURLModule
 
+[documentation.htm]
+ModuleType=TURLModule
+
 [EditWindow0]
 ViewCount=7
-CurrentEditView=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\DM.ClientDatasnap.pas
+CurrentEditView=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
 View0=0
 View1=1
 View2=2
@@ -72,17 +72,18 @@ ClientHeight=8993
 DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
-LeftPanelSize=1628
+LeftPanelSize=2135
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=000008000101000000005C0F000000000000015C060000000000000100000000C806000009000000446F636B536974653301000000004F1B00001100000050726F7065727479496E73706563746F72FFFFFFFF
-RightPanelSize=0
-BottomPanelSize=1516
+LeftPanelData=000008000101000000004F0F00000000000001570800000000000001000000005406000009000000446F636B53697465330100000000381B00001100000050726F7065727479496E73706563746F72FFFFFFFF
+RightPanelSize=1934
+RightPanelClients=DockSite2,DockSite4
+RightPanelData=000008000101000000004F0F000000000000018E0700000000000001000000004412000009000000446F636B53697465320100000000381B000009000000446F636B5369746534FFFFFFFF
+BottomPanelSize=1539
 BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020100000009000000446F636B5369746531724500000000000002EC050000000000000100000000724500000F0000004D65737361676556696577466F726DFFFFFFFF
+BottomPanelData=0000080001020100000009000000446F636B536974653172450000000000000203060000000000000100000000724500000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779D1D00000000000002F606000000000000FFFFFFFF
-TabDockRightClients=DockSite2=0,DockSite4=1
 
 [View0]
 CustomEditViewType=TWelcomePageView
@@ -90,69 +91,62 @@ WelcomePageURL=bds:/default.htm
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas
+Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Conexao\DS.Model.Conexao.Firedac.pas
 CursorX=1
-CursorY=69
-TopLine=67
+CursorY=1
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas
+EditViewName=Borland.FormDesignerView
 
 [View2]
 CustomEditViewType=TEditView
-Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas
-CursorX=90
-CursorY=45
-TopLine=32
+Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Cliente\ClientDatasnap.Pessoa.pas
+CursorX=78
+CursorY=136
+TopLine=175
 LeftCol=1
 Elisions=
-Bookmarks={2,86,7}
-EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas
+Bookmarks=
+EditViewName=Borland.FormDesignerView
 
 [View3]
 CustomEditViewType=TEditView
-Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
-CursorX=67
-CursorY=9
-TopLine=22
+Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
+CursorX=66
+CursorY=88
+TopLine=71
 LeftCol=1
 Elisions=
-Bookmarks=
-EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
+Bookmarks={1,142,85}{2,88,1}
+EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas
 
 [View4]
 CustomEditViewType=TEditView
-Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Pessoa.pas
-CursorX=90
-CursorY=50
-TopLine=26
+Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas
+CursorX=1
+CursorY=39
+TopLine=20
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Pessoa.pas
+EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas
 
 [View5]
 CustomEditViewType=TEditView
-Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\DM.ClientDatasnap.pas
-CursorX=1
-CursorY=59
-TopLine=51
+Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas
+CursorX=33
+CursorY=133
+TopLine=123
 LeftCol=1
 Elisions=
-Bookmarks={1,82,82}
-EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\DM.ClientDatasnap.pas
+Bookmarks={1,137,1}
+EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas
 
 [View6]
-CustomEditViewType=TEditView
-Module=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\ClientDatasnap.Pessoa.pas
-CursorX=1
-CursorY=130
-TopLine=121
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\ClientDatasnap.Pessoa.pas
+CustomEditViewType=TWelcomePageView
+WelcomePageURL=bds:/documentation.htm
 
 [UndockedDesigner]
 Count=0
@@ -182,10 +176,13 @@ Dockable=1
 StayOnTop=0
 
 [Breakpoints]
-Count=3
-Breakpoint0='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas',124,'',0,1,'',1,0,0,'',1,'','','',0,''
+Count=6
+Breakpoint0='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas',131,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint1='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\DM.ClientDatasnap.pas',215,'',0,1,'',1,0,0,'',1,'','','',0,''
 Breakpoint2='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Servidor\View\Entidade\DS.View.Entidade.Endereco.pas',39,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint3='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Pessoa.pas',75,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint4='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas',127,'',0,1,'',1,0,0,'',1,'','','',0,''
+Breakpoint5='C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\DataSnap API REST Json - Postgres\Projeto Cadastro Pessoa - GitHub\Delphi Rest - Cadastro Pessoa\Servidor\Model\Entidade\DS.Model.Entidade.Endereco.pas',155,'',0,1,'',1,0,0,'',1,'','','',0,''
 
 [EmbarcaderoWin32Debugger_AddressBreakpoints]
 Count=0
@@ -236,12 +233,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1829
-Height=8240
+Width=1934
+Height=4333
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8240
+ClientWidth=1934
+ClientHeight=4333
 TBDockHeight=5898
 LRDockWidth=2350
 Dockable=1
@@ -256,12 +253,12 @@ State=0
 Left=0
 Top=18
 Width=10000
-Height=1371
+Height=1396
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=10000
-ClientHeight=1371
-TBDockHeight=1371
+ClientHeight=1396
+TBDockHeight=1396
 LRDockWidth=2767
 Dockable=1
 StayOnTop=0
@@ -274,12 +271,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1829
-Height=8544
+Width=1934
+Height=2184
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8544
+ClientWidth=1934
+ClientHeight=2184
 TBDockHeight=7148
 LRDockWidth=1999
 Dockable=1
@@ -330,18 +327,23 @@ Visible=1
 Docked=1
 State=0
 Left=0
-Top=168
-Width=1628
-Height=5291
+Top=158
+Width=2135
+Height=5388
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1628
-ClientHeight=5291
+ClientWidth=2135
+ClientHeight=5388
 TBDockHeight=9017
-LRDockWidth=1628
+LRDockWidth=2135
 Dockable=1
 StayOnTop=0
-SplitPos=95
+SplitPos=143
+
+[PropInspDesignerSelection]
+ArrangeBy=Name
+SelectedItem=,CustomHint
+ExpandedItems=ConnectedStoredUsage=0,FetchOptions=0,FormatOptions=0,"LiveBindings Designer=0",Params=0,ResourceOptions=0,Connection=0,FieldOptions=0,FilterChanges=0,FilterOptions=0,LiveBindings=0,Anchors=0,Constraints=0,Font=1,Margins=0,Font.Style=0,ActiveStoredUsage=0
 
 [ClassBrowserTool]
 PercentageSizes=1
@@ -408,12 +410,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1829
-Height=8240
+Width=1934
+Height=8471
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8240
+ClientWidth=1934
+ClientHeight=8471
 TBDockHeight=5959
 LRDockWidth=2513
 Dockable=1
@@ -425,8 +427,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1128
-Top=-69
+Left=-1145
+Top=-32
 Width=2845
 Height=6201
 MaxLeft=-1
@@ -444,8 +446,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-16
-Top=254
+Left=-1239
+Top=192
 Width=273
 Height=364
 MaxLeft=-1
@@ -501,7 +503,6 @@ Column0Width=145
 Column1Width=100
 Column2Width=115
 Column3Width=250
-Column4Width=250
 
 [LocalVarsWindow]
 PercentageSizes=1
@@ -633,12 +634,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1829
-Height=8240
+Width=1934
+Height=8471
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8240
+ClientWidth=1934
+ClientHeight=8471
 TBDockHeight=4879
 LRDockWidth=7148
 Dockable=1
@@ -697,12 +698,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1628
-Height=1553
+Width=2135
+Height=1432
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1628
-ClientHeight=1553
+ClientWidth=2135
+ClientHeight=1432
 TBDockHeight=3677
 LRDockWidth=1895
 Dockable=1
@@ -716,12 +717,12 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=1829
-Height=8240
+Width=1934
+Height=8471
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8240
+ClientWidth=1934
+ClientHeight=8471
 TBDockHeight=4879
 LRDockWidth=5306
 Dockable=1
@@ -798,21 +799,21 @@ ActiveTabID=DebugLogView
 TabDockClients=DebugLogView,BreakpointWindow,ThreadStatusWindow,CallStackWindow,WatchWindow,LocalVarsWindow
 
 [DockSite2]
-HostDockSite=RightTabDock
+HostDockSite=DockRightPanel
 DockSiteType=1
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=1
 State=0
-Left=1214
-Top=107
+Left=0
+Top=18
 Width=1934
-Height=9017
+Height=4636
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8544
+ClientWidth=1934
+ClientHeight=4636
 TBDockHeight=9017
 LRDockWidth=1934
 Dockable=1
@@ -831,14 +832,14 @@ Docked=1
 State=0
 Left=0
 Top=18
-Width=1628
-Height=1553
+Width=2135
+Height=1432
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1628
-ClientHeight=1553
+ClientWidth=2135
+ClientHeight=1432
 TBDockHeight=9017
-LRDockWidth=1628
+LRDockWidth=2135
 Dockable=1
 StayOnTop=0
 TabPosition=1
@@ -846,21 +847,21 @@ ActiveTabID=StructureView
 TabDockClients=StructureView,ClassBrowserTool
 
 [DockSite4]
-HostDockSite=RightTabDock
+HostDockSite=DockRightPanel
 DockSiteType=1
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=1
 State=0
-Left=8
-Top=8
+Left=0
+Top=422
 Width=1934
-Height=9017
+Height=2184
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1829
-ClientHeight=8544
+ClientWidth=1934
+ClientHeight=2184
 TBDockHeight=9017
 LRDockWidth=1934
 Dockable=1
@@ -870,5 +871,5 @@ ActiveTabID=ToolForm
 TabDockClients=ToolForm,TemplateView
 
 [ActiveProject]
-ActiveProject=2
+ActiveProject=1
 
