@@ -1,9 +1,9 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Cadastro Pessoa - DatasnapRESTFul'
+  Caption = 'Cadastro Pessoa - DatasnapRESTFul (Vers'#227'o 1.0.3)'
   ClientHeight = 613
-  ClientWidth = 793
+  ClientWidth = 796
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,11 +16,12 @@ object Form2: TForm2
   object PageControl1: TPageControl
     Left = 0
     Top = 0
-    Width = 793
+    Width = 796
     Height = 613
     ActivePage = TabSheet1
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 793
     object TabSheet1: TTabSheet
       Caption = 'Exerc'#237'cio 3'
       ExplicitLeft = 0
@@ -78,8 +79,8 @@ object Form2: TForm2
         ParentFont = False
       end
       object Label14: TLabel
-        Left = 173
-        Top = 525
+        Left = 176
+        Top = 527
         Width = 31
         Height = 13
         Caption = 'Excluir'
@@ -111,7 +112,7 @@ object Form2: TForm2
           end
           item
             Expanded = False
-            FieldName = 'finatureza'
+            FieldName = 'flnatureza'
             Width = 60
             Visible = True
           end
@@ -387,6 +388,7 @@ object Form2: TForm2
     object TabSheet2: TTabSheet
       Caption = 'Exerc'#237'cio 3 - Lote'
       ImageIndex = 1
+      ExplicitWidth = 785
       object mmListaPessoas: TMemo
         Left = 3
         Top = 0

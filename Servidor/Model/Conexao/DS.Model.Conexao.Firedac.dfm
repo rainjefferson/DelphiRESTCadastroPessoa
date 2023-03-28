@@ -6,7 +6,7 @@ object DMConexaoFiredac: TDMConexaoFiredac
     Params.Strings = (
       'Database=wk'
       'User_Name=postgres'
-      'Password=postgres10'
+      'Password=root'
       'Server=localhost'
       'DriverID=PG')
     LoginPrompt = False

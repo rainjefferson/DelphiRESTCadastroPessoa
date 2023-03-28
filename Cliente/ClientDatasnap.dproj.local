@@ -19,4 +19,12 @@
     <Transaction>2023/03/12 18:50:33.000.525,=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\Unit1.pas</Transaction>
     <Transaction>2023/03/12 18:50:50.000.265,C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\uEndereco.pas=C:\Users\jeffe\Desktop\Vaga Delphi 2023 - WK\Projeto Delphi Pessoas\Cliente\Unit1.pas</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="ClientDatasnap.Pessoa.pas"/>
+    <File Path="ClientDatasnap.Pessoa.dfm"/>
+    <File Path="DM.ClientDatasnap.pas"/>
+    <File Path="DM.ClientDatasnap.dfm"/>
+    <File Path="uEndereco.pas"/>
+    <File Path="uPessoa.pas"/>
+  </ProjectSortOrder>
 </BorlandProject>

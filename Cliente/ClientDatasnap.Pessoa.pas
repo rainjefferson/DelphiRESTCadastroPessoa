@@ -62,6 +62,8 @@ type
     function ObterJsonEndereco(const IdPessoa: Integer): String;
     function EfetuarPut(const JsonPessoa, JsonEndereco: String): String;
     function EfetuarPost(const JsonPessoa, JsonEndereco: String; const CodPes, CodEnd: Integer): String;
+    function InformacoesValidasParaPut: Boolean;
+    function InformacoesValidaParaPost: Boolean;
   public
     { Public declarations }
   end;
@@ -110,15 +112,82 @@ procedure TForm2.btnPostClick(Sender: TObject);
 var
   sPessoa, sEndereco: String;
 begin
+  if not InformacoesValidaParaPost then
+    Exit;
+
   sPessoa := ObterJsonPessoa;
   sEndereco := ObterJsonEndereco(StrToInt(edtCodigoPessoa.Text));
   EfetuarPost(sPessoa, sEndereco, StrToInt(edtCodigoPessoa.Text), StrToInt(edtIdEndereco.Text));
+end;
+
+function TForm2.InformacoesValidaParaPost: Boolean;
+begin
+  Result := False;
+  if Trim(edtCodigoPessoa.Text) = '' then
+  begin
+    Application.MessageBox('O código do cadastro da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtCodigoPessoa.CanFocus then
+      edtCodigoPessoa.SetFocus;
+  end
+  else
+  if Trim(edtIdEndereco.Text) = '' then
+  begin
+    Application.MessageBox('O código do endereço da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtIdEndereco.CanFocus then
+      edtIdEndereco.SetFocus;
+  end
+  else
+    Result := True;
+end;
+
+function TForm2.InformacoesValidasParaPut: Boolean;
+begin
+  Result := False;
+  if Trim(edtNatureza.Text) = '' then
+  begin
+    Application.MessageBox('O código da natureza da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtNatureza.CanFocus then
+      edtNatureza.SetFocus;
+  end
+  else
+  if Trim(edtDocumento.Text) = '' then
+  begin
+    Application.MessageBox('O código do documento da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtDocumento.CanFocus then
+      edtDocumento.SetFocus;
+  end
+  else
+  if Trim(edtPrimeiroNome.Text) = '' then
+  begin
+    Application.MessageBox('O primeiro nome da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtPrimeiroNome.CanFocus then
+      edtPrimeiroNome.SetFocus;
+  end
+  else
+  if Trim(edtSobrenome.Text) = '' then
+  begin
+    Application.MessageBox('O sobrenome da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtSobrenome.CanFocus then
+      edtSobrenome.SetFocus;
+  end
+  else
+  if Trim(edtCEP.Text) = '' then
+  begin
+    Application.MessageBox('O CEP do endereço é obrigatório!', 'Validação', MB_OK);
+    if edtCEP.CanFocus then
+      edtCEP.SetFocus;
+  end
+  else
+    Result := True;
 end;
 
 procedure TForm2.btnPutClick(Sender: TObject);
 var
   sPessoa, sEndereco: String;
 begin
+  if not InformacoesValidasParaPut then
+    Exit;
+
   sPessoa := ObterJsonPessoa;
   sEndereco := ObterJsonEndereco(StrToInt(edtCodigoPessoa.Text));
   EfetuarPut(sPessoa, sEndereco);
