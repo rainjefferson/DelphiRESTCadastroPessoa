@@ -20,7 +20,8 @@ uses
   DataSetConverter4D in 'DataSetConverter4D.pas',
   DataSetConverter4D.Util in 'DataSetConverter4D.Util.pas',
   DS.Model.Entidade.Endereco in 'Model\Entidade\DS.Model.Entidade.Endereco.pas' {ModelEntidadeEndereco: TDataModule},
-  DS.View.Entidade.Endereco in 'View\Entidade\DS.View.Entidade.Endereco.pas' {Endereco: TDataModule};
+  DS.View.Entidade.Endereco in 'View\Entidade\DS.View.Entidade.Endereco.pas' {Endereco: TDataModule},
+  uEndereco in '..\Cliente\uEndereco.pas';
 
 {$R *.res}
 
@@ -33,6 +34,5 @@ begin
   Application.CreateForm(TModelEntidadePessoa, ModelEntidadePessoa);
   Application.CreateForm(TPessoa, Pessoa);
   Application.CreateForm(TModelEntidadeEndereco, ModelEntidadeEndereco);
-  Application.CreateForm(TEndereco, Endereco);
   Application.Run;
 end.

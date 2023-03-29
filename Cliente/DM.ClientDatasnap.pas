@@ -26,7 +26,7 @@ type
     { Private declarations }
   public
     { Public declarations }
-    function EnviarRequestPUT(const JSon, EndPointPut: String): String;
+    function EnviarRequestPUT(const JSon, EndPointPut: String; var IdNovo: Integer): String;
     function EnviarRequestPOST(const JSon, EndPointPost, ResourcePost: String): String;
     function EnviarRequestDELETE(const EndPointDelete, ResourceDelete: String): String;
     function EnviarPessoasEmLote(const Json: String): String;
@@ -206,7 +206,7 @@ begin
   end;
 end;
 
-function TDMClientDatasnap.EnviarRequestPUT(const JSon, EndPointPut: String): String;
+function TDMClientDatasnap.EnviarRequestPUT(const JSon, EndPointPut: String; var IdNovo: Integer): String;
 var
   RESTClient: TRESTClient;
   RESTRequest: TRESTRequest;
@@ -231,7 +231,10 @@ begin
      RESTRequest.Execute;
      Result := IntToStr(RESTRequest.Response.StatusCode) + ' ' + RESTRequest.Response.StatusText;
      if RESTRequest.Response.Content <> '' then
-       Result := Result + '. ' + RESTRequest.Response.Content;
+     begin
+       Result := Result + '. Código IdPEssoa: ' + RESTRequest.Response.Content;
+       IdNovo := StrToIntDef(RESTRequest.Response.Content, 0);
+     end;
   finally
      FreeAndNil(RESTClient);
      FreeAndNil(RESTRequest);

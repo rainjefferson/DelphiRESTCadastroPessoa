@@ -17,7 +17,7 @@ type
   public
     { Public declarations }
     function Pessoa(const Key : String) : TJSONArray;
-    procedure acceptPessoa(const Key : String; JObject : TJSONObject);
+    function acceptPessoa(const Key : String; JObject : TJSONObject): Integer;
     procedure updatePessoa(const Key : String; JObject : TJSONObject);
     procedure cancelPessoa(const key : String);
     procedure updatePessoaLote(JsonArrayObject: TJSONArray);
@@ -35,9 +35,9 @@ implementation
 
 { TProduto }
 
-procedure TPessoa.acceptPessoa(const Key: String; JObject: TJSONObject);
+function TPessoa.acceptPessoa(const Key: String; JObject: TJSONObject): Integer;
 begin
-  FController.Entidades.Pessoa.Put(Key,JObject);
+  Result := FController.Entidades.Pessoa.Put(Key,JObject).FDQuery1.FieldByName('idpessoa').AsInteger;
 end;
 
 procedure TPessoa.cancelPessoa(const key: String);

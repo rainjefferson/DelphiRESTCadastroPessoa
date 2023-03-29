@@ -30,6 +30,9 @@ var
 
 implementation
 
+uses
+  DS.Model.Entidade.Endereco, uEndereco;
+
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
@@ -70,34 +73,50 @@ end;
 
 function TModelEntidadePessoa.InsertLote(JsonArray: TJSONArray): TModelEntidadePessoa;
 var
-  aJsonObjetc: TJSonValue;
+  aJsonObject: TJSonValue;
+  ModelEndereco: TModelEntidadeEndereco;
+  oEndereco: TEndereco;
 begin
   Result := Self;
-  for aJsonObjetc in JsonArray do
-  begin
-    FDQuery1.Close;
-    FDQuery1.SQL.Clear;
-    FDQuery1.SQL.Add('select * from pessoa where 1=2');
-    FDQuery1.Open;
-    FDQuery1.RecordFromJSONObject(aJsonObjetc as TJSonObject);
+  ModelEndereco := TModelEntidadeEndereco.Create(Self);
+  oEndereco := TEndereco.Create;
+  try
+    for aJsonObject in JsonArray do
+    begin
+      FDQuery1.Close;
+      FDQuery1.SQL.Clear;
+      FDQuery1.SQL.Add('select * from pessoa where 1=2');
+      FDQuery1.Open;
+      FDQuery1.RecordFromJSONObject(aJsonObject as TJSonObject);
 
-    if not (FDQuery1.State in dsEditModes) then
-      FDQuery1.Edit;
+      if not (FDQuery1.State in dsEditModes) then
+        FDQuery1.Edit;
 
-    FDQuery1.FieldByName('idpessoa').Value := ObterProximoCodigo('pessoa', 'idpessoa');
+      FDQuery1.FieldByName('idpessoa').Value := ObterProximoCodigo('pessoa', 'idpessoa');
 
-    DMConexaoFiredac.FDTransaction.StartTransaction;
-    try
-      FDQuery1.ApplyUpdates(-1);
-      DMConexaoFiredac.FDTransaction.Commit;
-    except
-      on E: Exception do
-      begin
-        DMConexaoFiredac.FDTransaction.Rollback;
-        raise Exception.Create('Erro ao gravar lista de array de pessoa no banco de dados com código ' +
-           ' Erro: ' + E.Message);
+      DMConexaoFiredac.FDTransaction.StartTransaction;
+      try
+        FDQuery1.ApplyUpdates(-1);
+        DMConexaoFiredac.FDTransaction.Commit;
+
+        // Insere endereço
+        oEndereco.IdEndereco := 0;
+        oEndereco.IdPessoa := FDQuery1.FieldByName('idpessoa').AsInteger;
+        oEndereco.DsCep := (aJsonObject as TJSonObject).GetValue('dscep').ToString;
+        ModelEndereco.Put('', oEndereco.toJson(''));
+
+      except
+        on E: Exception do
+        begin
+          DMConexaoFiredac.FDTransaction.Rollback;
+          raise Exception.Create('Erro ao gravar lista de array de pessoa no banco de dados com código ' +
+             ' Erro: ' + E.Message);
+        end;
       end;
     end;
+  finally
+    FreeAndNil(ModelEndereco);
+    FreeAndNil(oEndereco);
   end;
 end;
 

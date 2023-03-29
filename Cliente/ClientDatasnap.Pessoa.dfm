@@ -1,9 +1,9 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Cadastro Pessoa - DatasnapRESTFul (Vers'#227'o 1.0.3)'
+  Caption = 'Cadastro Pessoa - DatasnapRESTFul (Vers'#227'o 1.0.4)'
   ClientHeight = 613
-  ClientWidth = 796
+  ClientWidth = 889
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,15 +16,15 @@ object Form2: TForm2
   object PageControl1: TPageControl
     Left = 0
     Top = 0
-    Width = 796
+    Width = 889
     Height = 613
     ActivePage = TabSheet1
     Align = alClient
     TabOrder = 0
-    ExplicitWidth = 793
+    ExplicitWidth = 796
     object TabSheet1: TTabSheet
       Caption = 'Exerc'#237'cio 3'
-      ExplicitLeft = 0
+      ExplicitLeft = 8
       ExplicitTop = 28
       object Label9: TLabel
         Left = 8
@@ -40,8 +40,8 @@ object Form2: TForm2
         ParentFont = False
       end
       object Label10: TLabel
-        Left = 8
-        Top = 183
+        Left = 575
+        Top = 8
         Width = 65
         Height = 16
         Caption = 'Endere'#231'o:'
@@ -53,8 +53,8 @@ object Form2: TForm2
         ParentFont = False
       end
       object Label12: TLabel
-        Left = 11
-        Top = 525
+        Left = 3
+        Top = 413
         Width = 29
         Height = 13
         Caption = 'Insert'
@@ -66,8 +66,8 @@ object Form2: TForm2
         ParentFont = False
       end
       object Label13: TLabel
-        Left = 92
-        Top = 525
+        Left = 84
+        Top = 413
         Width = 35
         Height = 13
         Caption = 'Update'
@@ -79,8 +79,8 @@ object Form2: TForm2
         ParentFont = False
       end
       object Label14: TLabel
-        Left = 176
-        Top = 527
+        Left = 168
+        Top = 415
         Width = 31
         Height = 13
         Caption = 'Excluir'
@@ -94,7 +94,7 @@ object Form2: TForm2
       object dbgrigPessoa: TDBGrid
         Left = 3
         Top = 30
-        Width = 777
+        Width = 566
         Height = 153
         DataSource = DataSourcePessoa
         TabOrder = 0
@@ -125,13 +125,13 @@ object Form2: TForm2
           item
             Expanded = False
             FieldName = 'nmprimeiro'
-            Width = 150
+            Width = 119
             Visible = True
           end
           item
             Expanded = False
             FieldName = 'nmsegundo'
-            Width = 150
+            Width = 139
             Visible = True
           end
           item
@@ -142,10 +142,10 @@ object Form2: TForm2
           end>
       end
       object dbgridEndereco: TDBGrid
-        Left = 3
-        Top = 201
-        Width = 777
-        Height = 98
+        Left = 575
+        Top = 30
+        Width = 302
+        Height = 153
         DataSource = DataSourceEndereco
         TabOrder = 1
         TitleFont.Charset = DEFAULT_CHARSET
@@ -169,13 +169,13 @@ object Form2: TForm2
           item
             Expanded = False
             FieldName = 'dscep'
-            Width = 150
+            Width = 103
             Visible = True
           end>
       end
       object btnGetPessoa: TButton
-        Left = 8
-        Top = 305
+        Left = 3
+        Top = 189
         Width = 75
         Height = 25
         Caption = 'Get'
@@ -183,9 +183,9 @@ object Form2: TForm2
         OnClick = btnGetPessoaClick
       end
       object GroupBox1: TGroupBox
-        Left = 0
-        Top = 344
-        Width = 761
+        Left = 3
+        Top = 220
+        Width = 875
         Height = 154
         TabOrder = 3
         object Label1: TLabel
@@ -342,8 +342,8 @@ object Form2: TForm2
         end
       end
       object btnPut: TButton
-        Left = 11
-        Top = 500
+        Left = 3
+        Top = 388
         Width = 75
         Height = 25
         Caption = 'Put '
@@ -351,8 +351,8 @@ object Form2: TForm2
         OnClick = btnPutClick
       end
       object btnPost: TButton
-        Left = 92
-        Top = 500
+        Left = 84
+        Top = 388
         Width = 75
         Height = 25
         Caption = 'Post'
@@ -360,8 +360,8 @@ object Form2: TForm2
         OnClick = btnPostClick
       end
       object btnDelete: TButton
-        Left = 173
-        Top = 500
+        Left = 165
+        Top = 388
         Width = 75
         Height = 25
         Caption = 'Delete'
@@ -369,15 +369,16 @@ object Form2: TForm2
         OnClick = btnDeleteClick
       end
       object mmResult: TMemo
-        Left = 10
-        Top = 539
-        Width = 751
-        Height = 40
+        Left = 3
+        Top = 459
+        Width = 875
+        Height = 123
+        ScrollBars = ssVertical
         TabOrder = 7
       end
       object btnAtualizarEnderecos: TButton
-        Left = 472
-        Top = 504
+        Left = 589
+        Top = 388
         Width = 289
         Height = 25
         Caption = 'Exerc'#237'cio 4 - Atualizar Endere'#231'os - ViaCep.com.br'
@@ -388,7 +389,7 @@ object Form2: TForm2
     object TabSheet2: TTabSheet
       Caption = 'Exerc'#237'cio 3 - Lote'
       ImageIndex = 1
-      ExplicitWidth = 785
+      ExplicitWidth = 788
       object mmListaPessoas: TMemo
         Left = 3
         Top = 0
@@ -397,36 +398,41 @@ object Form2: TForm2
         Lines.Strings = (
           '['
           '{'
-          '    "idpessoa":1010,'
+          '    "idpessoa":1,'
           '    "flnatureza":1,'
           '    "dsdocumento":"123123",'
-          '    "nmprimeiro":"NOVO",'
-          '    "nmsegundo":"CADASTRO",'
-          '    "dtregistro":"2023-03-14"'
+          '    "nmprimeiro":"WK",'
+          '    "nmsegundo":"Technology",'
+          '    "dtregistro":"2023-03-14",'
+          '    "dscep": "81830220"'
           '},'
           '{'
-          '    "idpessoa":1020,'
+          '    "idpessoa":2,'
           '    "flnatureza":1,'
           '    "dsdocumento":"123123",'
-          '    "nmprimeiro":"NOVO",'
-          '    "nmsegundo":"CADASTRO",'
-          '    "dtregistro":"2023-03-14"'
+          '    "nmprimeiro":"WK",'
+          '    "nmsegundo":"Technology",'
+          '    "dtregistro":"2023-03-14",    '
+          '    "dscep": "81830220"'
           '},'
           '{'
-          '    "idpessoa":1030,'
+          '    "idpessoa":3,'
           '    "flnatureza":1,'
           '    "dsdocumento":"123123",'
-          '    "nmprimeiro":"NOVO",'
-          '    "nmsegundo":"CADASTRO",'
-          '    "dtregistro":"2023-03-14"'
+          '    "nmprimeiro":"WK",'
+          '    "nmsegundo":"Technology",'
+          '    "dtregistro":"2023-03-14",'
+          '    "dtregistro":"2023-03-14",'
+          '    "dscep": "81830220"'
           '},'
           '{'
-          '    "idpessoa":1040,'
+          '    "idpessoa":4,'
           '    "flnatureza":1,'
           '    "dsdocumento":"123123",'
-          '    "nmprimeiro":"NOVO",'
-          '    "nmsegundo":"CADASTRO",'
-          '    "dtregistro":"2023-03-14"'
+          '    "nmprimeiro":"WK",'
+          '    "nmsegundo":"Technology",'
+          '    "dtregistro":"2023-03-14",'
+          '    "dscep": "81830220"'
           '}'
           ']')
         TabOrder = 0
@@ -449,7 +455,7 @@ object Form2: TForm2
   end
   object DataSourceEndereco: TDataSource
     DataSet = DMClientDatasnap.FDMemTableEndereco
-    Left = 416
+    Left = 504
     Top = 232
   end
 end

@@ -3,7 +3,7 @@ unit uEndereco;
 interface
 
 uses
-  System.SysUtils;
+  System.JSON;
 
 type
   TEndereco = class
@@ -12,7 +12,8 @@ type
     FDsCEP: String;
     FIdPessoa: Integer;
   public
-    function ToJson: String;
+    function ToJson: String; overload;
+    function ToJson(const Json: String): TJSONObject; overload;
   published
     property IdEndereco: Integer read FIdEndereco write FIdEndereco;
     property IdPessoa: Integer read FIdPessoa write FIdPessoa;
@@ -21,13 +22,29 @@ type
 
 implementation
 
+uses
+  System.SysUtils;
+
 { TEndereco }
 
 function TEndereco.ToJson: String;
 begin
   Result := '{"idendereco":"' + IntToStr(IdEndereco) +
             '","idpessoa":"' + IntToStr(IdPessoa) +
-            '","dscep":"' + FDsCEP + '"}';
+            '","dscep":"' + StringReplace(FDsCEP,'"','',[rfReplaceAll]) + '"}';
+end;
+
+function TEndereco.ToJson(const Json: String): TJSONObject;
+var
+  sJson: String;
+  JsonValue: TJsonValue;
+begin
+  if Json <> '' then
+    sJson := Json
+  else
+    sJson := ToJson;
+  JsonValue := TJSonObject.ParseJSONValue(sJson);
+  Result := TJsonObject(JsonValue);
 end;
 
 end.

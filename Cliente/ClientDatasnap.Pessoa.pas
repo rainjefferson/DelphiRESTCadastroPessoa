@@ -60,7 +60,7 @@ type
     procedure OnTerminoThreadFuncaoExecutarEvento(Sender: TObject);
     function ObterJsonPessoa: String;
     function ObterJsonEndereco(const IdPessoa: Integer): String;
-    function EfetuarPut(const JsonPessoa, JsonEndereco: String): String;
+    function EfetuarPut(const JsonPessoa: String): String;
     function EfetuarPost(const JsonPessoa, JsonEndereco: String; const CodPes, CodEnd: Integer): String;
     function InformacoesValidasParaPut: Boolean;
     function InformacoesValidaParaPost: Boolean;
@@ -137,6 +137,41 @@ begin
       edtIdEndereco.SetFocus;
   end
   else
+  if Trim(edtNatureza.Text) = '' then
+  begin
+    Application.MessageBox('O código da natureza da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtNatureza.CanFocus then
+      edtNatureza.SetFocus;
+  end
+  else
+  if Trim(edtDocumento.Text) = '' then
+  begin
+    Application.MessageBox('O código do documento da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtDocumento.CanFocus then
+      edtDocumento.SetFocus;
+  end
+  else
+  if Trim(edtPrimeiroNome.Text) = '' then
+  begin
+    Application.MessageBox('O primeiro nome da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtPrimeiroNome.CanFocus then
+      edtPrimeiroNome.SetFocus;
+  end
+  else
+  if Trim(edtSobrenome.Text) = '' then
+  begin
+    Application.MessageBox('O sobrenome da pessoa é obrigatório!', 'Validação', MB_OK);
+    if edtSobrenome.CanFocus then
+      edtSobrenome.SetFocus;
+  end
+  else
+  if Trim(edtCEP.Text) = '' then
+  begin
+    Application.MessageBox('O CEP do endereço é obrigatório!', 'Validação', MB_OK);
+    if edtCEP.CanFocus then
+      edtCEP.SetFocus;
+  end
+  else
     Result := True;
 end;
 
@@ -183,14 +218,13 @@ end;
 
 procedure TForm2.btnPutClick(Sender: TObject);
 var
-  sPessoa, sEndereco: String;
+  sPessoa: String;
 begin
   if not InformacoesValidasParaPut then
     Exit;
 
   sPessoa := ObterJsonPessoa;
-  sEndereco := ObterJsonEndereco(StrToInt(edtCodigoPessoa.Text));
-  EfetuarPut(sPessoa, sEndereco);
+  EfetuarPut(sPessoa);
 end;
 
 procedure TForm2.btnAtualizarEnderecosClick(Sender: TObject);
@@ -221,11 +255,22 @@ begin
       OnTerminoThreadFuncaoExecutarEvento { OnTermino });
 end;
 
-function TForm2.EfetuarPut(const JsonPessoa, JsonEndereco: String): String;
+function TForm2.EfetuarPut(const JsonPessoa: String): String;
+var
+  IdPessoaCadastrado: Integer;
+  IdEnderecoCadastrado: Integer;
+  SResponse: String;
 begin
-  mmResult.Lines.Add(DMClientDatasnap.EnviarRequestPUT(JsonPessoa, 'tpessoa/pessoa/-1'));
-  mmResult.Lines.Add('');
-  mmResult.Lines.Add(DMClientDatasnap.EnviarRequestPUT(JsonEndereco, 'tendereco/endereco/-1'));
+  mmResult.Lines.Add('Consumindo endpoint Pessoa...');
+  SResponse := DMClientDatasnap.EnviarRequestPUT(JsonPessoa, 'tpessoa/pessoa/-1', IdPessoaCadastrado);
+
+  if IdPessoaCadastrado > 0 then
+  begin
+    mmResult.Lines.Add(SResponse);
+    mmResult.Lines.Add('Consumindo endpoint Endereço...');
+    SResponse := DMClientDatasnap.EnviarRequestPUT(ObterJsonEndereco(IdPessoaCadastrado), 'tendereco/endereco/-1', IdEnderecoCadastrado);
+    mmResult.Lines.Add(SResponse);
+  end;
 end;
 
 function TForm2.EfetuarPost(const JsonPessoa, JsonEndereco: String; const CodPes, CodEnd: Integer): String;
